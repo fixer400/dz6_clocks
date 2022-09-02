@@ -1,38 +1,34 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.App__header{
+  display: flex;
+}
+
+.App__input{
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.App__clocks{
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 800px;
+}
+
+.Clock{
+  margin: 25px;
+  padding: 15px 25px 15px 25px;
+  border: 1px solid green;
+}
+
+.Clock button{
+  background-color: green;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
